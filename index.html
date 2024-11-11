@@ -1,20 +1,21 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!DOCTYPE html> <!-- Declara o documento como HTML5 -->
+<html lang="pt-br"> <!-- Define o idioma do conteúdo como português do Brasil -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 para suportar caracteres especiais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura o layout responsivo para se ajustar à largura da tela do dispositivo -->
+    <title>Calculadora</title> <!-- Define o título que aparecerá na aba do navegador -->
+    <link rel="stylesheet" href="styles.css"> <!-- Conecta o arquivo CSS externo para estilizar o HTML --> 
 </head>
 <body>
-    <div class="calculator">
-        <input type="text" id="display" disabled />
-        <div class="buttons">
-            <button onclick="clearDisplay()">C</button>
-            <button onclick="appendToDisplay('(')">(</button>
-            <button onclick="appendToDisplay(')')">)</button>
-            <button onclick="appendToDisplay('/')">/</button>
+    <div class="calculator"> <!-- Div principal da calculadora que envolve o display e os botões -->
+        <input type="text" id="display" disabled /> <!-- Campo de entrada que exibe os números e resultados; o atributo "disabled" impede que o usuário digite diretamente -->
+        <div class="buttons"> <!-- Contêiner para organizar os botões da calculadora em uma grade -->
+            <button onclick="clearDisplay()">C</button> <!-- Botão de limpar que chama a função clearDisplay() ao ser clicado -->
+            <button onclick="appendToDisplay('(')">(</button> <!-- Botão para adicionar parêntese esquerdo -->
+            <button onclick="appendToDisplay(')')">)</button> <!-- Botão para adicionar parêntese direito -->
+            <button onclick="appendToDisplay('/')">/</button> <!-- Botão para operação de divisão -->
 
+             <!-- Botões numéricos e de operação, cada um chamando appendToDisplay com seu respectivo valor -->
             <button onclick="appendToDisplay('7')">7</button>
             <button onclick="appendToDisplay('8')">8</button>
             <button onclick="appendToDisplay('9')">9</button>
@@ -32,9 +33,9 @@
 
             <button onclick="appendToDisplay('0')">0</button>
             <button onclick="appendToDisplay('.')">.</button>
-            <button onclick="calculate()">=</button>
+            <button onclick="calculate()">=</button> <!-- Botão de igual que chama a função calculate() para avaliar a expressão -->
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="script.js"></script> <!-- Conecta o arquivo JavaScript com a lógica da calculadora -->
 </body>
 </html>

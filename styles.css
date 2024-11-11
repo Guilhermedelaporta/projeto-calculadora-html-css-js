@@ -1,6 +1,7 @@
 * {
-    box-sizing: border-box;
+    box-sizing: border-box; /* Define o cálculo de largura/altura incluindo o padding e bordas */
 }
+
 
 body {
     display: flex;
@@ -8,59 +9,60 @@ body {
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f3f3f3;
+    font-family: Arial, sans-serif; /*Define a fonte da letra */
+    background-color: #f3f3f3; /* Define a cor de fundo do elemento body*/
 }
 
 .calculator {
-    width: 280px;
+    width: 280px; /*Define a largura da calculadora.*/
     background-color: #333;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 8px; /*Define uma borda arredondada*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Aplica uma sombra */
+
 }
 
 #display {
-    width: 100%;
+    width: 100%; /*Define a largura do elemento*/
     padding: 15px;
-    font-size: 1.5em;
-    text-align: right;
+    font-size: 1.5em; /*define o tamanho da fonte*/
+    text-align: right; /*Alinha o texto à direita, como em uma calculadora comum.*/
     margin-bottom: 10px;
     border: none;
-    border-radius: 4px;
+    border-radius: 4px; /*Dfine uma borda arredondada*/
     background-color: #222;
-    color: #fff;
+    color: #fff; /* Define a cor do texo para branco */
 }
 
 .buttons {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);  /* Cria uma grade com 4 colunas de largura igual */
+    gap: 10px; /* Espaço entre os botões */
 }
 
 button {
     padding: 20px;
     font-size: 1.2em;
-    background-color: #444;
-    color: #fff;
+    background-color: #444; /*Define a cor de fundo*/
+    color: #fff; /*Define a cor do texto*/
     border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.2s;
+    border-radius: 4px; /*Define uma borda arredondada*/
+    cursor: pointer; 
+    transition: background-color 0.2s; /* Transição suave ao passar o mouse */
 }
 
 button:hover {
-    background-color: #555;
+    background-color: #555; /* Define a cor de fundo  */
 }
 
 button:active {
-    background-color: #666;
+    background-color: #666; /* Define a cor de fundo  */
 }
 
 button:nth-child(4n) {
-    background-color: #d58300;
+    background-color: #d58300; /* Define a cor de fundo  */
 }
 
 button:nth-child(4n):hover {
-    background-color: #e09500;
+    background-color: #e09500; /* Define a cor de fundo  */
 }
